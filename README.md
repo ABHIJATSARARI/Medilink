@@ -21,7 +21,7 @@ Follow these steps to set up and run MediLink:
 
 1. **Clone the Repository:**
    ```shell
-   git clone https://github.com/your-username/medilink.git
+   git clone https://github.com/Abhijatsarari/medilink.git
    cd medilink
    ```
 
