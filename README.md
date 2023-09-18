@@ -7,7 +7,7 @@ MediLink: A Transparent and Accessible Medical Records Network" project and high
 
 MediLink is a revolutionary healthcare solution designed to enhance the integrity, accessibility, and security of medical records through the use of blockchain technology and Pangea APIs. This README provides instructions on setting up and running the project, and it highlights where Pangea APIs are used.
 
-["https://github.com/ABHIJATSARARI/Medilink/blob/main/public/assets/logo.png"]
+!(logo)["https://github.com/ABHIJATSARARI/Medilink/blob/main/public/assets/logo.png"]
 
 ## Prerequisites
 
