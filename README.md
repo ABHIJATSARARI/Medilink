@@ -1,6 +1,6 @@
 MediLink: A Transparent and Accessible Medical Records Network" project and highlights the key areas where Pangea APIs are utilized:
 
-```markdown
+
 # MediLink: A Transparent and Accessible Medical Records Network
 
 ## Project Overview
@@ -68,6 +68,6 @@ MediLink utilizes Pangea APIs in the following key areas:
 For more details on how to use specific features of the application or for any troubleshooting, please refer to the project's documentation or contact our support team.
 
 Thank you for using MediLink to improve the integrity and accessibility of medical records!
-```
+
 
 Please replace `"your-username"` with your actual GitHub username if the project is hosted on GitHub. Additionally, ensure that you have the necessary Pangea API credentials to use the Pangea services in the project.
