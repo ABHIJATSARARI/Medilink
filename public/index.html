@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MediLink is a secure and transparent medical records network using blockchain technology and Pangea APIs.">
+  <title>MediLink</title>
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body >
+  <header>
+    <div class="theme-toggle">
+      <label class="toggle">
+        <input type="checkbox" id="theme-toggle-checkbox">
+        <span class="material-icons toggle-handle">brightness_4</span>
+      </label>
+    </div>
+    <img src="assets/logo.png" alt="MediLink Logo" id="logo">
+    <h1>MediLink</h1>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2>Welcome to MediLink</h2>
+      <p>A Transparent and Accessible Medical Records Network</p>
+      <p>MediLink aims to establish a secure and transparent medical records network using blockchain technology, integrating Pangea APIs for seamless data management. This network ensures the integrity and accessibility of medical records.</p>
+    </section>
+
+    <section id="login">
+      <h2>Login</h2>
+      <p>Please enter your credentials to access your medical records.</p>
+      <form id="login-form">
+        <div class="form-group">
+          <label for="role">Select your role:</label>
+          <select id="role" name="role" required>
+            <option value="">Select your role</option>
+            <option value="patient">Patient</option>
+            <option value="provider">Provider</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="id">ID:</label>
+          <input type="text" id="id" name="id" placeholder="Enter your unique ID" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" id="login-button" class="action-button"><span class="material-icons">login</span>Login</button>
+      </form>
+    </section>
+
+    <section id="records">
+      <h2>Your Medical Records</h2>
+      <p>View, update, and verify your medical records here.</p>
+      <table id="records-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Hash</th>
+            <th>Date</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="4">No records found</td></tr>
+        </tbody>
+      </table>
+
+      <div id="record-modal" aria-hidden="true" aria-labelledby="record-modal-title" aria-describedby="record-modal-data">
+        <div id="record-modal-content">
+          <span id="record-modal-close" aria-label="Close">×</span>
+          <h3 id="record-modal-title">Record Details</h3>
+          <p id="record-modal-data"></p>
+          <form id="record-modal-form">
+            <label for="record-modal-request">Enter your verification request as JSON:</label>
+            <textarea id="record-modal-request" name="record-modal-request" rows="5" cols="50"></textarea>
+            <button type="submit" id="record-modal-button" class="action-button"><span class="material-icons">check_circle</span>Verify</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 MediLink Team</p>
+    <p>Powered by Blockchain and Pangea APIs</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
